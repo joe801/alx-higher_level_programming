@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 def uppercase(str):
     l = len(str)
+    if l < 1:
+        print()
     count = 0
     for i in str:
         c = ord(i)
