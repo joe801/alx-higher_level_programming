@@ -53,11 +53,11 @@ class Square(Rectangle):
                     setattr(self, list_atr[i], args[i])
         else:
             for key, value in kwargs.items():
-            if key == 'size':
-                setattr(self, 'width', value)
-                setattr(self, 'height', value)
-            else:
-                setattr(self, key, value)
+                if key == 'size':
+                    setattr(self, 'width', value)
+                    setattr(self, 'height', value)
+                else:
+                    setattr(self, key, value)
 
     def to_dictionary(self):
         """ Returns a dictionary with attributes """
